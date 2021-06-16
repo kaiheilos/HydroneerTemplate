@@ -4,16 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "VoxelWorld.generated.h"
+#include "VoxelPart.generated.h"
 
 UCLASS()
-class VOXEL_API AVoxelWorld : public AActor
+class VOXEL_API AVoxelPart : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AVoxelWorld();
+	AVoxelPart();
 
 protected:
 	// Called when the game starts or when spawned

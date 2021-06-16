@@ -3,17 +3,17 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
-#include "VoxelAutoDisableComponent.generated.h"
+#include "VoxelWorldInterface.h"
+#include "VoxelWorld.generated.h"
 
 UCLASS()
-class VOXEL_API AVoxelAutoDisableComponent : public AActor
+class VOXEL_API AVoxelWorld : public AVoxelWorldInterface
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AVoxelAutoDisableComponent();
+	AVoxelWorld();
 
 protected:
 	// Called when the game starts or when spawned

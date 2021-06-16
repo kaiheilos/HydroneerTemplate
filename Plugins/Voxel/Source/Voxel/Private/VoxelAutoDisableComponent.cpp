@@ -2,25 +2,32 @@
 
 #include "VoxelAutoDisableComponent.h"
 
-// Sets default values
-AVoxelAutoDisableComponent::AVoxelAutoDisableComponent()
+// Sets default values for this component's properties
+UVoxelAutoDisableComponent::UVoxelAutoDisableComponent()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
+	// off to improve performance if you don't need them.
+	PrimaryComponentTick.bCanEverTick = true;
 
+	// ...
 }
 
-// Called when the game starts or when spawned
-void AVoxelAutoDisableComponent::BeginPlay()
+
+// Called when the game starts
+void UVoxelAutoDisableComponent::BeginPlay()
 {
 	Super::BeginPlay();
+
+	// ...
 	
 }
 
-// Called every frame
-void AVoxelAutoDisableComponent::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
 
+// Called every frame
+void UVoxelAutoDisableComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+{
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+	// ...
 }
 
