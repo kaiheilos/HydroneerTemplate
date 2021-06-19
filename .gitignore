@@ -75,3 +75,6 @@ DerivedDataCache/*
 
 # Ignore personal content in project
 Content/Private*
+Content/HydroUMH/Hooks/*
+!Content/HydroUMH/Hooks/BP_HookTemplate.uasset
+!Content/HydroUMH/Hooks/BP_HookTemplate.uexp
